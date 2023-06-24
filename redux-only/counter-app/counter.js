@@ -14,7 +14,9 @@ const initialState = {
 
 //increase Action creator
 const incrementAction = () => {
+  // This function is called action creator.
   return {
+    // This returning abject is called action.
     type: "INCREMENT",
   };
 };
@@ -65,7 +67,7 @@ const counterReducer = (state = initialState, action) => {
 };
 // store
 
-const store = createStore(counterReducer);
+const store = createStore(counterReducer); // this reducer is registered listener
 
 // subscribe to store
 store.subscribe(() => {
